@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+.student{
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.sidebar {
+    float: left;
+    width: 35%;
+    background-color: #c7fdee; 
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.objective {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.objective p{
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.main-content {
+    float: right;
+    width: 70%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.experience, .education, .skills, .hobbies, .languages, .reference {
+    margin-bottom: 30px;
+}
+
+.experience ul, .education ul, .skills ul, .hobbies ul, .languages ul {
+    list-style: disc;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.reference p {
+    font-size: 16px;
+    color: #333;
+}
+
+.call, .location, .email{
+    /* background-color: red; */
+    display: flex;
+}
+.call p, .location p, .email p{
+    /* background-color: yellow; */
+    margin-left: 10px;
+}
+.call i, .location i, .email i{
+    /* background-color: white ; */
+    margin-top: 13px;
+}
+
+.introduction {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    background-color: rgba(114, 111, 111, 0.8); 
+    color: white;
+    padding: 20px;
+    border: double 10px;
+    border-color: white;
+    border-radius: 20px;
+    display: none;
+    max-width: 400px;
+    z-index: 1000; 
+}
+
+#profilePic {
+    cursor: pointer; 
+}
