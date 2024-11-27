@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ali Naqi Khan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/new.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-image">
+                <img src="Ali.jpg" alt="Profile Picture" id="profilePic">
+            </div>
+            <div class="contact-info">
+                <div class="location">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <p>333-Jade, Ste#2, Park View City, Multan Road, Lahore</p>
+                </div>
+                <div class="call">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>0300-8007652</p>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p><a href="mailto:alinaqikhan10@gmail.com">alinaqikhan10@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="objective">
+                <h2>Objective</h2>
+                <p>Motivated and results-driven professional seeking a challenging position in software engineering
+                    where my skills and expertise in this field can contribute to the growth and success of the
+                    organization.</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Ali Naqi Khan</h1>
+            <h3 class="student">Software Enginnering Student</h3>
+
+            <div class="experience">
+                <h2>Experience</h2>
+                <p><strong>July 2023 – Sep 2023</strong></p>
+                <ul>
+                    <li>Worked at <strong>Amectix by Wordsense</strong> as Chatting Agent</li>
+                    <li>Categorized among the list of top agents of the organization</li>
+                </ul>
+                <p><strong>Sep 2023 – Till Date</strong></p>
+                <ul>
+                    <li>Home Tutor</li>
+                    <li>Worked hard to help an average student become brilliant in their academics</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Matriculation:</strong> <br> The Educators, Shakargarh campus</li>
+                    <li>4th position in Gujranwala board with 1077/1100 marks in Matric (2020)</li>
+                    <li><strong>Intermediate:</strong><br> Punjab College, Main Campus 1030/1100 marks in F.Sc
+                        (Pre-Medical)
+                    </li>
+                    <li><strong>Bachelors:</strong><br> Currently studying in COMSATS University Islamabad, Lahore
+                        Campus
+                        (CGPA 4.0)</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Leadership Qualities</li>
+                    <li>Enthusiastic & Punctual</li>
+                    <li>Motivated & Disciplined</li>
+                    <li>Great ability to work under pressure</li>
+                    <li>Hard Working & Ambitious</li>
+                    <li>Can work individually and as a team</li>
+                    <li>Innovative & Creative</li>
+                    <li>Clever problem-solving abilities</li>
+                </ul>
+            </div>
+
+            <!-- Moved Hobbies and Languages here -->
+            <div class="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Sports</li>
+                    <li>Sketching</li>
+                    <li>Writing</li>
+                    <li>Reading</li>
+                </ul>
+            </div>
+
+            <div class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Currently working on HTML and CSS</li>
+                </ul>
+            </div>
+
+            <div class="reference">
+                <h2>Reference</h2>
+                <p>Available upon request</p>
+            </div>
+        </div>
+    </div>
+    <div id="introduction" class="introduction">
+        <p>Hello, I'm Ali Naqi Khan, a motivated software engineering student with leadership qualities and a passion
+            for technology.</p>
+    </div>
+
+    <script>
+        const profilePic = document.getElementById("profilePic");
+        const introduction = document.getElementById("introduction");
+
+        profilePic.addEventListener("mouseenter", () => {
+            introduction.style.display = "block";
+        });
+
+        profilePic.addEventListener("mouseleave", () => {
+            introduction.style.display = "none";
+        });
+    </script>
+
+</body>
+
+</html>

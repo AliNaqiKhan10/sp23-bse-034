@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stlyes.css"> <!-- Ensure CSS is linked -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Express serving</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/checkout">Checkout</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/landing">Landing Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <!-- Render dynamic content (Checkout or CV page) -->
+    <div id="content">
+        <%- include(content) %>
+    </div>
+
+    <hr>
+    <footer>
+        <p style="padding-left:690px; padding-top: 10px;">Thanks for visiting!</p>
+    </footer>
+</body>
+</html>
