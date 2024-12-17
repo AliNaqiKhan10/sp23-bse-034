@@ -1,3 +1,11 @@
+<head>
+    <title>ETHNC</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Ethnic_Favicon.webp" type="image/x-icon">
+</head>
 
 <body>
     <header>
@@ -20,28 +28,57 @@
         </div>
     </header>
 
-    
-    <body>
-        <div class="main">
-        <ul>
-            <% for (let index = 0; index < product.length; index++) { %>
-                <li>
-                    <img src="/<%= product[index].picture %>" alt="Product Image" style="max-width: 300px; max-height: 300px;">
-                    <div class="product-name">
-                        <strong>Name:</strong> <%= product[index].name %>
-                    </div>
-                    <div>
-                        <strong>Price:</strong> <%= product[index].price %> <br>
-                    </div>
-                    <div>
-                        <strong>Description:</strong> <%= product[index].description %>
-                    </div>
-                </li>
-            <% } %>
-        </ul>
-    </div>
-    </body>
-    
+    <main>
+        <div id="pic1">
+            <img src="/images/pic1.jpeg" class="img1" alt="">
+        </div>
+
+        <div class="img-content">
+            <h1>CAPSULE COLLECTION - A/W '24</h1>
+            <p>Discover our collection of printed and embroidered two-piece & three-piece outfits, featuring intricate
+                patches on the sleeves and borders. Each set includes stylish uppers under lining and comfortable
+                trousers, crafted from high-quality viscose and cotton, available in a wide range of hues to suit your
+                unique style.</p>
+        </div>
+
+
+        <body>
+            <div class="main">
+                <ul>
+                    <% for (let index=0; index < product.length; index++) { %>
+                        <li>
+                            <img src="/<%= product[index].picture %>" alt="Product Image"
+                                style="max-width: 500px; max-height: 500px;">
+                            <div class="product-name">
+                                <strong>Name:</strong>
+                                <%= product[index].name %>
+                            </div>
+                            <div>
+                                <strong>Price:</strong>
+                                <%= product[index].price %> <br>
+                            </div>
+                            <% if (product[index].description) { %>
+                                <div>
+                                    <strong>Description:</strong>
+                                    <%= product[index].description %>
+                                </div>
+                            <% } %>
+                            
+                        </li>
+                        <% } %>
+                </ul>
+            </div>
+        </body>
+
+
+        <div class="above-footer-section">
+            <div class="inn">
+                <p>NO MORE PRODUCTS</p>
+            </div>
+        </div>
+    </main>
+
+    <hr>
 
     <footer>
         <div class="footer-container">
