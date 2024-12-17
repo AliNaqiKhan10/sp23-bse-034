@@ -1,0 +1,91 @@
+
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo">
+                <i class=" fa-solid fa-bars"></i>
+                <h1 class="name">ETHNC</h1>
+            </div>
+
+            <div id="nav-con">
+                <a href="#">SEARCH</a>
+                <a href="#">ACCOUNT</a>
+                <a href="#">CART(0)</a>
+            </div>
+        </div>
+
+        <div class="addition">
+            <a href="#">SORT</a>
+            <a href="#" id="filter">FILTER</a>
+        </div>
+    </header>
+
+    
+    <body>
+        <div class="main">
+        <ul>
+            <% for (let index = 0; index < product.length; index++) { %>
+                <li>
+                    <img src="/<%= product[index].picture %>" alt="Product Image" style="max-width: 300px; max-height: 300px;">
+                    <div class="product-name">
+                        <strong>Name:</strong> <%= product[index].name %>
+                    </div>
+                    <div>
+                        <strong>Price:</strong> <%= product[index].price %> <br>
+                    </div>
+                    <div>
+                        <strong>Description:</strong> <%= product[index].description %>
+                    </div>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+    </body>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column logo">
+                <img src="/images/pic17.jpg" alt="Ethnc logo">
+            </div>
+
+            <div class="footer-column newsletter">
+                <h4>JOIN OUR NEWSLETTER</h4>
+                <a href="#">OUR BRAND</a><br>
+                <a href="#">SHOP WITH US</a>
+            </div>
+        </div>
+
+        <div class="footer-container-2">
+            <div class=" apps">
+                <h4>OUR APPS</h4>
+                <a href="#"><i class="fa-brands fa-apple"></i> Apple Store</a>
+                <a href="#"><i class="fa-brands fa-google-play"></i> Google Play</a>
+            </div>
+
+            <div class=" social">
+                <a href="#">FACEBOOK</a>
+                <a href="#">INSTAGRAM</a>
+                <a href="#">YOUTUBE</a>
+                <a href="#">SNAPCHAT</a><br>
+                <p>SCAN BARCODE <i class="fa-solid fa-barcode"></i></p>
+            </div>
+
+            <div class="contact">
+                <h4>CUSTOMER SERVICES</h4>
+                <p>NEED TO TALK TO US?<br>Mon - Fri 9:00 to 5:00 PST.</p>
+                <div class="contact-icons">
+                    <i class="fa-solid fa-mobile"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Ethnic &copy 2024. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
