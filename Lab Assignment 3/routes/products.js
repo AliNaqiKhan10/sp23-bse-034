@@ -33,7 +33,7 @@ router.post("/products/create", upload.single("file"), async (req, res) => {
 // Render List of Products with Pagination
 router.get('/products', async (req, res) => {
     let page = req.query.page ? Number(req.query.page) : 1; // Current page
-    let pageSize = 2; // Number of products per page
+    let pageSize = 5; // Number of products per page
 
     // Fetch products for the current page
     let products = await Product.find()
@@ -105,7 +105,7 @@ router.get("/products/delete/:id", async (req, res) => {
 // Pagination for Products (optional, based on your URL structure)
 router.get("/products/:page?", async (req, res) => {
     let page = req.params.page ? Number(req.params.page) : 1; // Current page
-    let pageSize = 2; // Items per page
+    let pageSize = 5; // Items per page
 
     // Fetch products for the current page
     let products = await Product.find()
